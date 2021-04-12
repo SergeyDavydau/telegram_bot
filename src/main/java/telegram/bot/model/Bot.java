@@ -53,12 +53,11 @@ public class Bot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "telegram_travel_bot";
+        return "test_travel_city_info_bot";
     }
 
     @Override
     public String getBotToken() {
-        return "1714570870:AAFHjsdnd_LwgThpZxwSbndHHCXkTPkphjg";
+        return "1794548630:AAEVGtsIwdswYQHUHWO5ZbxGa076kzK24rQ";
     }
-
 }

@@ -1,0 +1,87 @@
+table {
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+th, td:first-child {
+    background: #AFCDE7;
+    color: white;
+    padding: 10px 20px;
+}
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+td {
+    background: #D8E6F3;
+}
+th:first-child, td:first-child {
+    text-align: left;
+}
+.button {
+    position: relative;
+    background-color: #D8E6F3;
+    border: none;
+    border-radius: 5px;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+ul {
+    background: #D8E6F3;
+    padding: 20px;
+}
+li {
+    font-size: 22px;
+    border-collapse: collapse;
+    border-radius: 4px;
+    text-align: center;
+    background: #AFCDE7;
+    padding: 5px;
+    margin-left: 15px;
+    display: inline;
+}
+a:link, a:visited {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+a:link:active, a:visited:active {
+    color: #AFCDE7;
+}
+textarea{
+    margin: 0px;
+    width: 1561px;
+    height: 228px;
+}
+
+
+

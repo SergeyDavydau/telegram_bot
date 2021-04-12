@@ -58,7 +58,7 @@ public class BotController {
         } catch (Exception e) {
             log.error(e.getMessage());
         }
-        if (messageForBotRepo.findByCity(request.getParameter("city").toLowerCase()) == null) {
+        if (messageForBotRepo.findByCity(request.getParameter("city").toLowerCase()) == null || id != null) {
             messageForBotRepo.save(new MessageForBot(id,
                     request.getParameter("city"),
                     request.getParameter("description"),

@@ -26,7 +26,7 @@ public class Bot extends TelegramLongPollingBot {
         sendMessage.setReplyToMessageId(message.getMessageId());
         sendMessage.setText(getDescriptionByCity(message.getText()));
         try {
-            sendMessage(sendMessage);
+            execute(sendMessage);
         } catch (Exception e) {
             log.error(e.getMessage());
         }
